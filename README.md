@@ -14,10 +14,10 @@ This image uses the ubuntu:vivid image which provides the latest znc, and theref
 
 1. Build a crane/fig etc.. service file which does similar to the following:
 
-`docker run -d -p 8443:8443 -v ./znc_config:/znc_config --name znc inanimate/znc`
+`docker run -d -p 8443:8443 -v ~/znc_config:/znc_config --name znc inanimate/znc`
 
 2. ????
 
 3. Profit.
 
-> If you do not already have a config directory (if you've been using znc, its `/home/username/<znc>`), take a look at run as it provides a basic config by providing some parameters.
+> If you do not already have a config directory (if you've been using znc, its `/home/username/.znc`), take a look at run as it provides a basic config by providing some parameters.
