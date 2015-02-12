@@ -24,3 +24,18 @@ This image uses the ubuntu:vivid image which provides the latest znc, and theref
 
 
 > If you do not already have a config directory (if you've been using znc, its `/home/username/.znc`), take a look at `/znc-run` as it provides a basic config by providing some parameters.
+
+
+#### Example crane config:
+
+```
+containers:
+    znc:
+        image: inanimate/znc
+        run:
+            restart: always
+            publish: ["0.0.0.0:8443:8443"]
+            volume: ["./znc_config:/znc_config"]
+            hostname: znc
+            detach: true
+```
