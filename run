@@ -64,4 +64,4 @@ EOF
 
 fi;
 chown znc:znc -R /znc_config
-su -c "znc -r -f -d ${ZNC_ROOT}"
+su - znc -c "znc -r -f -d ${ZNC_ROOT}"
